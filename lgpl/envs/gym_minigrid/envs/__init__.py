@@ -1,0 +1,1 @@
+from lgpl.envs.gym_minigrid.envs.six_room_abs_pickplace import *
