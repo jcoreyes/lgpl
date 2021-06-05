@@ -11,6 +11,8 @@ Paper: https://arxiv.org/abs/1811.07882
 - conda env create -f docker/environment.yml
 - pip install other requirementt manually
 - Install https://github.com/justinjfu/doodad
+- Download expert policies for minigrid [pickplace](https://drive.google.com/file/d/1jKjdVmtKfv89nlzI47AZrd_a-HButeY0/view?usp=sharing) and [pusher](https://drive.google.com/file/d/1bho0FzFRb_bcHYeN62ePYOhcSCOPOIoh/view?usp=sharing)
+- Extract files to <REPO_DIR>/data/exps
 
 ## Generating Tasks and Language
 - Tasks and their corresponding environment are generated using a context free grammar (using NLTK)
@@ -20,7 +22,7 @@ Paper: https://arxiv.org/abs/1811.07882
 - For pusher, modify the texture file path in lgpl/envs/assets/pusher_env2.xml to the correct absolute path of lgpl/envs/assets/marble_texture_006.png
 
 ## Training Expert Policies
-- Saved expert policies are provided in data/exps/minigrid/pickplace9 and data/exps/pusher/pusher3v4-expert1
+- Saved expert policies will be in data/exps/minigrid/pickplace9 and data/exps/pusher/pusher3v4-expert1 after downloading and extracting
 - To train your own expert policies use 
 ```
 python exps/minigrid/train_experts.py
